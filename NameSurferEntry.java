@@ -24,8 +24,8 @@ public class NameSurferEntry implements NameSurferConstants {
 		// You fill this in //
 	}
 
-	/* Method: getName() */
 	/**
+	 * Public Method: getName()
 	 * Returns the name associated with this entry.
 	 */
 	public String getName() {
@@ -33,8 +33,9 @@ public class NameSurferEntry implements NameSurferConstants {
 		return null;
 	}
 
-	/* Method: getRank(decade) */
+	/*  */
 	/**
+	 * Public Method: getRank(decade)
 	 * Returns the rank associated with an entry for a particular
 	 * decade.  The decade value is an integer indicating how many
 	 * decades have passed since the first year in the database,
