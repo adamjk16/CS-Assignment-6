@@ -35,8 +35,7 @@ public class NameSurfer extends ConsoleProgram implements NameSurferConstants {
 	 * is resized. This method is called on each resize!
 	 */
 	public void componentResized(ComponentEvent e) { 
-		// You fill this in //
-		// we *strongly* recommend that you define a "redraw" helper method
+		redraw();
 	}
 	
 	/**
