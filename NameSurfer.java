@@ -5,6 +5,7 @@
  * the baby-name database described in the assignment handout.
  */
 
+import acm.graphics.*;
 import acm.program.*;
 import java.awt.event.*;
 import javax.swing.*;
