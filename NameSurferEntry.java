@@ -33,7 +33,6 @@ public class NameSurferEntry implements NameSurferConstants {
 		return null;
 	}
 
-	/*  */
 	/**
 	 * Public Method: getRank(decade)
 	 * Returns the rank associated with an entry for a particular
@@ -47,8 +46,8 @@ public class NameSurferEntry implements NameSurferConstants {
 		return 0;
 	}
 
-	/* Method: toString() */
 	/**
+	 * Public Method: toString()
 	 * Returns a string that makes it easy to see the value of a
 	 * NameSurferEntry.
 	 */
