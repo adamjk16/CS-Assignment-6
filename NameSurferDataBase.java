@@ -27,7 +27,6 @@ public class NameSurferDataBase implements NameSurferConstants {
 		// You fill this in //
 	}
 
-	/*  */
 	/**
 	 * Public Method: findEntry(name)
 	 * Returns the NameSurferEntry associated with this name, if one
