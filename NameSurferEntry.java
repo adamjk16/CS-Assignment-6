@@ -12,9 +12,9 @@ import java.util.*;
 public class NameSurferEntry implements NameSurferConstants {
 
 	// TODO: Add instance variables
-	
-	/* Constructor: NameSurferEntry(line) */
+
 	/**
+	 * Constructor: NameSurferEntry(line)
 	 * Creates a new NameSurferEntry from a data line as it appears
 	 * in the data file.  Each line begins with the name, which is
 	 * followed by integers giving the rank of that name for each
