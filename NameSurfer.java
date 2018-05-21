@@ -11,7 +11,7 @@ import javax.swing.*;
 import java.util.*;
 import acm.util.*;
 
-public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
+public class NameSurfer extends ConsoleProgram implements NameSurferConstants {
 
 	/**
 	 * This method has the responsibility for reading in the data base
