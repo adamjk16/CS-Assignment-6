@@ -14,6 +14,8 @@ import java.util.*;
 
 public class NameSurferDataBase implements NameSurferConstants {
 
+	// TODO: Add instance variables
+	
 	/* Constructor: NameSurferDataBase(filename) */
 	/**
 	 * Creates a new NameSurferDataBase and initializes it using the
