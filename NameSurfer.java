@@ -19,6 +19,7 @@ public class NameSurfer extends ConsoleProgram implements NameSurferConstants {
 	 */
 	public void init() {
 		// You fill this in, along with any helper methods //
+		print("hello world")l
 	}
 
 	/**
