@@ -59,6 +59,10 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants, 
 		// You fill this in //
 	}
 	
+	/**
+	 * This class is responsible for detecting when the the canvas
+	 * is resized. This method is called on each resize!
+	 */
 	public void componentResized(ComponentEvent e) { 
 		update(); 
 	}
