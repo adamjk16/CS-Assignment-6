@@ -46,6 +46,7 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants, 
 	 * the size of the canvas changes.
 	 */
 	public void update() {
+		println("test");
 		// You fill this in //
 	}
 
