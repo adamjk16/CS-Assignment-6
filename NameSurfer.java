@@ -16,7 +16,6 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants, 
 	 * and initializing the interactors at the top of the window.
 	 */
 	public void init() {
-		addComponentListener(this);
 		// You fill this in, along with any helper methods //
 	}
 
