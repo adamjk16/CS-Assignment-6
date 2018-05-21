@@ -9,7 +9,7 @@ import acm.program.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-public class NameSurfer extends GraphicsProgram implements NameSurferConstants, ComponentListener {
+public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 
 	/**
 	 * This method has the responsibility for reading in the data base
