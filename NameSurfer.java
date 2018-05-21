@@ -34,6 +34,14 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 	 * is resized. This method is called on each resize!
 	 */
 	public void componentResized(ComponentEvent e) { 
+		// You fill this in //
+		// we *strongly* recommend that you call the redraw helper method
+	}
+	
+	/**
+	 * A helper method that we *strongly* recommend
+	 */
+	private void redraw() {
 		
 	}
 }
