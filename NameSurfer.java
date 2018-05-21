@@ -39,9 +39,11 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 	}
 	
 	/**
-	 * A helper method that we *strongly* recommend
+	 * A helper method that we *strongly* recommend. Redraw clears the
+	 * entire display and repaints it. Consider calling it when you change
+	 * the data being displayed.
 	 */
 	private void redraw() {
-		
+		// You fill this in //
 	}
 }
