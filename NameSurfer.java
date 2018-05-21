@@ -58,9 +58,4 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants, 
 	public void actionPerformed(ActionEvent e) {
 		// You fill this in //
 	}
-
-	public void componentHidden(ComponentEvent e) { }
-	public void componentMoved(ComponentEvent e) { }
-	public void componentResized(ComponentEvent e) { update(); }
-	public void componentShown(ComponentEvent e) { }
 }
