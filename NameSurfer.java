@@ -41,7 +41,7 @@ public class NameSurfer extends ConsoleProgram implements NameSurferConstants {
 	/**
 	 * A helper method that we *strongly* recommend. Redraw clears the
 	 * entire display and repaints it. Consider calling it when you change
-	 * the data being displayed.
+	 * anything about the display.
 	 */
 	private void redraw() {
 		// You fill this in //
