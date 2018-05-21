@@ -19,6 +19,8 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 	 */
 	public void init() {
 		// You fill this in, along with any helper methods //
+		println(getWidth());
+		println(getHeight());
 	}
 
 	/**
