@@ -36,7 +36,6 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants, 
 		// You fill this in //
 	}
 
-
 	/**
 	 * Updates the display image by deleting all the graphical objects
 	 * from the canvas and then reassembling the display according to
