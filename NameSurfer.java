@@ -11,7 +11,6 @@ import javax.swing.*;
 
 public class NameSurfer extends GraphicsProgram implements NameSurferConstants, ComponentListener {
 
-	/* Method: init() */
 	/**
 	 * This method has the responsibility for reading in the data base
 	 * and initializing the interactors at the top of the window.
@@ -29,7 +28,6 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants, 
 	}
 
 
-	/* Method: addEntry(entry) */
 	/**
 	 * Adds a new NameSurferEntry to the list of entries on the display.
 	 * Note that this method does not actually draw the graph, but
@@ -51,7 +49,6 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants, 
 		// You fill this in //
 	}
 
-	/* Method: actionPerformed(e) */
 	/**
 	 * This class is responsible for detecting when the buttons are
 	 * clicked, so you will have to define a method to respond to
