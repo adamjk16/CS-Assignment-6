@@ -16,8 +16,8 @@ public class NameSurferDataBase implements NameSurferConstants {
 
 	// TODO: Add instance variables
 	
-	/* Constructor: NameSurferDataBase(filename) */
 	/**
+	 * Constructor: NameSurferDataBase(filename)
 	 * Creates a new NameSurferDataBase and initializes it using the
 	 * data in the specified file.  The constructor throws an error
 	 * exception if the requested file does not exist or if an error
@@ -27,8 +27,9 @@ public class NameSurferDataBase implements NameSurferConstants {
 		// You fill this in //
 	}
 
-	/* Method: findEntry(name) */
+	/*  */
 	/**
+	 * Public Method: findEntry(name)
 	 * Returns the NameSurferEntry associated with this name, if one
 	 * exists.  If the name does not appear in the database, this
 	 * method returns null.
