@@ -1,7 +1,7 @@
 /*
  * File: VoteCounter.java
  * ---------------------
- * A sandcastle program that uses collections 
+ * A sandcastle program that uses collections to tally votes 
  */
 
 import acm.program.*;
