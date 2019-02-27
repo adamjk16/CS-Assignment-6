@@ -23,7 +23,8 @@ public class VoteCounter extends ConsoleProgram {
 	}
 	
 	/*
-	 * Your job is to implement this method. 
+	 * Your job is to implement this method according to 
+	 * the problem specification. 
 	 */
 	private void printVoteCounts(ArrayList<String> votes) {
 		// TODO
