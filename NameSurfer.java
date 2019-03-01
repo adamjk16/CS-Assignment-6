@@ -26,9 +26,9 @@ public class NameSurfer extends ConsoleProgram implements NameSurferConstants {
 		inputName.addActionListener(this);
 		JButton graphButton = new JButton("Graph");
 		add(graphButton, NORTH);
-		addActionListeners();
 		JButton clearButton = new JButton("Clear");
 		add(clearButton, NORTH);
+		addActionListeners();
 		
 		
 	}
@@ -40,10 +40,10 @@ public class NameSurfer extends ConsoleProgram implements NameSurferConstants {
 	 */
 	public void actionPerformed(ActionEvent e) {
 		String actionCmd = e.getActionCommand();
-		if (actionCmd.equals(equals("Graph")) {
+		if (actionCmd.equals("Graph")) {
 			//graph???
-		} else if (actionCmd.equals("Clear")) {
-			
+		} else if (actionCmd.equals("Clear"))) {
+			???
 		}
 	}
 	
