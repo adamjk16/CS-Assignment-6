@@ -19,7 +19,8 @@ public class NameSurfer extends ConsoleProgram implements NameSurferConstants {
 	 * and initializing the interactors at the top of the window.
 	 */
 	public void init() {
-		// You fill this in, along with any helper methods //
+		JLabel label = new JLabel("Name: ");
+		add(label, NORTH);
 	}
 
 	/**
