@@ -21,7 +21,7 @@ public class NameSurfer extends ConsoleProgram implements NameSurferConstants {
 	public void init() {
 		JLabel nameLabel = new JLabel("Name: ");
 		add(nameLabel, NORTH);
-		JTextField inputName = new JTextField(10);
+		JTextField inputName = new JTextField(30);
 		add(inputName, NORTH);
 		JButton graphButton = new JButton("Graph");
 		add(graphButton, NORTH);
