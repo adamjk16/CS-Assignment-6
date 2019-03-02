@@ -43,7 +43,7 @@ public class NameSurfer extends ConsoleProgram implements NameSurferConstants {
 		if (actionCmd.equals("Graph")) {
 			//graph???
 		} else { 
-		
+			remove.nameLabel();
 			???
 		}
 	}
