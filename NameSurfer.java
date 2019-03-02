@@ -42,7 +42,7 @@ public class NameSurfer extends ConsoleProgram implements NameSurferConstants {
 		String actionCmd = e.getActionCommand();
 		if (actionCmd.equals("Graph")) {
 			//graph???
-		} else if (actionCmd.equals("Clear"))) {
+		} else if (actionCmd.equals("Clear")) {
 			???
 		}
 	}
