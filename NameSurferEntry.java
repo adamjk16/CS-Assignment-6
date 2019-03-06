@@ -12,6 +12,7 @@ import java.util.*;
 public class NameSurferEntry implements NameSurferConstants {
 
 	private String name;
+	private String number;
 
 	/**
 	 * Constructor: NameSurferEntry(line)
@@ -28,6 +29,12 @@ public class NameSurferEntry implements NameSurferConstants {
 				name += letter;
 			}
 		}
+		for(int i = 0; i < line.length(); i++) {
+			char number = line.charAt(i);
+			if (Character.isLetter(number)) {
+				name += number;
+			}
+		}	
 	}
 
 	/**
