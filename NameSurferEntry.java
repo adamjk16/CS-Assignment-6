@@ -11,7 +11,7 @@ import java.util.*;
 
 public class NameSurferEntry implements NameSurferConstants {
 
-	// TODO: Add instance variables
+	private String name;
 
 	/**
 	 * Constructor: NameSurferEntry(line)
@@ -22,7 +22,6 @@ public class NameSurferEntry implements NameSurferConstants {
 	 */
 	
 	public NameSurferEntry(String line) {
-		String name = "";
 		for(int i = 0; i < line.length(); i++) {
 			char letter = line.charAt(i);
 			if (Character.isLetter(letter)) {
