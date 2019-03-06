@@ -46,7 +46,8 @@ public class NameSurfer extends ConsoleProgram implements NameSurferConstants {
 			String name = inputName.getText();
 			println(name);
 		} else if (e.getActionCommand().equals("Clear")) {
-			removename();
+			removeAll();
+			println("Clear");
 		}
 		
 	}
