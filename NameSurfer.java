@@ -42,13 +42,9 @@ public class NameSurfer extends ConsoleProgram implements NameSurferConstants {
 	 * button actions.
 	 */
 	public void actionPerformed(ActionEvent e) {
-		String actionCmd = e.getActionCommand();
-		if (actionCmd.equals("Clear")) {
-			println("Clear");
-		} else { 
-			String userInputName = inputName.getText();	
-			println ("Graph: " + userInputName);
-		}
+		String name = inputName.getText();
+		println(name);
+		
 	}
 	
 	/**
