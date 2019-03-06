@@ -20,9 +20,14 @@ public class NameSurferEntry implements NameSurferConstants {
 	 * followed by integers giving the rank of that name for each
 	 * decade.
 	 */
+	
 	public NameSurferEntry(String line) {
+		String name = "";
 		for(int i = 0; i < line.length(); i++) {
-			//create new string if letter
+			char letter = line.charAt(i);
+			if (Character.isLetter(letter)) {
+				name += letter;
+			}
 		}
 	}
 
