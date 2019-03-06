@@ -22,7 +22,7 @@ public class NameSurferEntry implements NameSurferConstants {
 	 */
 	public NameSurferEntry(String line) {
 		for(int i = 0; i < line.length(); i++) {
-			
+			//create new string if letter
 		}
 	}
 
