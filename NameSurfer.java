@@ -42,6 +42,8 @@ public class NameSurfer extends ConsoleProgram implements NameSurferConstants {
 	 * button actions.
 	 */
 	public void actionPerformed(ActionEvent e) {
+		GObject clicked = getElementAt (e.getX(), e.getY());
+		if (clicked == G)
 		String name = inputName.getText();
 		println(name);
 		
