@@ -74,11 +74,12 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 			GLine line = new GLine((getWidth()/NDECADES) * i, 0, (getWidth()/NDECADES) * i, getHeight());
 			add(line);
 		}
+	}
+	
 	private void drawXAxis() {
 			GLine upperLine = new GLine(0, GRAPH_MARGIN_SIZE, getWidth(), GRAPH_MARGIN_SIZE);
 			add(upperLine);
 			GLine lowerLine = new GLine(0, getHeight() - GRAPH_MARGIN_SIZE, getWidth(), getHeight() - GRAPH_MARGIN_SIZE);
 			add(lowerLine);
-		}
-	}
+	}	
 }
