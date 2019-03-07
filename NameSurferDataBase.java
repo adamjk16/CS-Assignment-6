@@ -16,7 +16,7 @@ import java.io.*;
 public class NameSurferDataBase implements NameSurferConstants {
 
 	private Scanner names;
-	private 
+	private HashMap <String, > nameHashMap;
 	
 	/**
 	 * Constructor: NameSurferDataBase(filename)
