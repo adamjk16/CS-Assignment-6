@@ -91,7 +91,7 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 				add(decadeLabel, (getWidth()/NDECADES) * i, getHeight() - DECADE_LABEL_MARGIN_SIZE);
 			} else if (i == NDECADES - 1) {
 				GLabel decadeLabel = new GLabel ("2000");
-				add(decadeLabel, (getWidth()/NDECADES) * i, getHeight() - DECADE_LABEL_MARGIN);
+				add(decadeLabel, (getWidth()/NDECADES) * i, getHeight() - DECADE_LABEL_MARGIN_SIZE);
 			}
 		}
 	}
