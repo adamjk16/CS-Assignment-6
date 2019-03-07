@@ -63,7 +63,7 @@ public class NameSurferEntry implements NameSurferConstants {
 	 * NameSurferEntry.
 	 */
 	public String toString() {
-		String
+		String dataString = name + "[" + 
 		return "";
 	}
 }
