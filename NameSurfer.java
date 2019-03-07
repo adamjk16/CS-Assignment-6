@@ -70,7 +70,7 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 	
 	private void drawVerticalLines() {
 		for (int i = 0; i < NDECADES; i++) {
-			GLine line = new GLine(getWidth() * i, 0, getWidth() * i, getHeight());
+			GLine line = new GLine((getWidth()/NDECADES) * i, 0, (getWidth()/NDECADES) * i, getHeight());
 			add(line);
 		}
 	}
