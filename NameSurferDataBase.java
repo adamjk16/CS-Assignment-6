@@ -26,7 +26,8 @@ public class NameSurferDataBase implements NameSurferConstants {
 	 */
 	public NameSurferDataBase(String filename) {
 		try {
-			Scanner names = new File("names-data.txt");
+			Scanner names = new Scanner(new File("names-data.txt"));
+			
 		}
 	}
 
