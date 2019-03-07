@@ -29,7 +29,7 @@ public class NameSurferDataBase implements NameSurferConstants {
 		try {
 			names = new Scanner(new File("names-data.txt"));
 			while (names.hasNextLine()) {
-				String line = names.readLine();
+				String line = names.nextLine();
 				
 			}
 		} 
