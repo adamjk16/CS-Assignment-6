@@ -28,6 +28,9 @@ public class NameSurferDataBase implements NameSurferConstants {
 		try {
 			Scanner names = new Scanner(new File("names-data.txt"));
 			
+		} 
+		catch (IOException e) {
+			throw new
 		}
 	}
 
