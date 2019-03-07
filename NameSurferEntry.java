@@ -28,10 +28,7 @@ public class NameSurferEntry implements NameSurferConstants {
 		name = array[0];
 		for (int i = 1; i < array.length; i++) {
 			rank[i - 1] = Integer.parseInt(array[i]);
-			
 		}
-		
-		
 	}
 
 	/**
