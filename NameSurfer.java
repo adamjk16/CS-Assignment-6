@@ -97,5 +97,9 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 		}
 	}
 	
+	private void plotData() {
+		
+	}
+	
 	
 }	
