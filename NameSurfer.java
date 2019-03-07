@@ -67,6 +67,7 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 	private void redraw() {
 		drawYAxis();
 		drawXAxis();
+		addLabels();
 	}
 	
 	private void drawYAxis() {
@@ -81,5 +82,12 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 		add(upperLine);
 		GLine lowerLine = new GLine(0, getHeight() - GRAPH_MARGIN_SIZE, getWidth(), getHeight() - GRAPH_MARGIN_SIZE);
 		add(lowerLine);
-	}	
+	}
+	
+	private void addLabels() {
+		for (int START_DECADE; START_DECADE < 2010; START_DECADE++) {
+			GLabel decadeLabel = new GLabel ((getWidth()/NDECADES) * START_DECADE + 10, DECADE_LABEL_MARGIN_SIZE);
+			add(decadeLabel);
+		}
+	}
 }
