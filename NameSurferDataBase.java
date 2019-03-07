@@ -25,7 +25,9 @@ public class NameSurferDataBase implements NameSurferConstants {
 	 * occurs as the file is being read.
 	 */
 	public NameSurferDataBase(String filename) {
-		// You fill this in //
+		try {
+			Scanner names = new 
+		}
 	}
 
 	/**
