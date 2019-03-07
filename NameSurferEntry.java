@@ -12,7 +12,7 @@ import java.util.*;
 public class NameSurferEntry implements NameSurferConstants {
 
 	private String name;
-	private String number;
+	private int [] rank;
 
 	/**
 	 * Constructor: NameSurferEntry(line)
@@ -23,18 +23,9 @@ public class NameSurferEntry implements NameSurferConstants {
 	 */
 	
 	public NameSurferEntry(String line) {
-		for(int i = 0; i < line.length(); i++) {
-			char letter = line.charAt(i);
-			if (Character.isLetter(letter)) {
-				name += letter;
-			}
-		}
+		rank = new int [NDECADES];
 		
-		int [] rank = new int [11];
-		for (int i = 0; i < rank.length; i++) {
 		
-			string.split
-		}
 	}
 
 	/**
