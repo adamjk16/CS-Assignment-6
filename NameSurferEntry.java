@@ -37,8 +37,8 @@ public class NameSurferEntry implements NameSurferConstants {
 	 * Public Method: getName()
 	 * Returns the name associated with this entry.
 	 */
+	
 	public String getName() {
-		// You need to turn this stub into a real implementation //
 		return name;
 	}
 
@@ -51,8 +51,7 @@ public class NameSurferEntry implements NameSurferConstants {
 	 * not appear in a decade, the rank value is 0.
 	 */
 	public int getRank(int decade) {
-		// You need to turn this stub into a real implementation //
-		return 0;
+		return rank[NDECADES];
 	}
 
 	/**
