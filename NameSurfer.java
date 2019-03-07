@@ -69,12 +69,8 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 	}
 	
 	private void drawVerticalLines() {
-		int startY = ;
-		int endY = ;
 		for (int i = 0; i < NDECADES; i++) {
-			int startX = (canvas.getWidth()/2 - PARACHUTE_WIDTH/2) + (PARACHUTE_WIDTH/6 * i);
-			GLine line = new GLine(startX, startY, endX, endY);
-			canvas.add(line);
-			ropes.add(line);
+			GLine line = new GLine(i, GRAPH_MARGIN_SIZE, NDECADES, GRAPH_MARGIN_SIZE);
+			add(line);
 	}
 }
