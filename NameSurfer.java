@@ -98,7 +98,9 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 	}
 	
 	private void plotData() {
-		
+		for (int i = 0; i < NDECADES; i++) {
+			
+		}
 	}
 	
 	
