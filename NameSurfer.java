@@ -66,6 +66,7 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 	 * anything about the display.
 	 */
 	private void redraw() {
+		removeAll();
 		drawYAxis();
 		drawXAxis();
 		addLabels();
