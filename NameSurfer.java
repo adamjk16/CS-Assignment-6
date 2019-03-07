@@ -86,7 +86,7 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 	
 	private void addLabels() {
 		for (int START_DECADE; START_DECADE < 2010; START_DECADE++) {
-			GLabel decadeLabel = new GLabel ((getWidth()/NDECADES) * START_DECADE + 10, DECADE_LABEL_MARGIN_SIZE);
+			GLabel decadeLabel = new GLabel ();
 			add(decadeLabel);
 		}
 	}
