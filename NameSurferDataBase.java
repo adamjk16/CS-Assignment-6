@@ -15,7 +15,7 @@ import java.io.*;
 
 public class NameSurferDataBase implements NameSurferConstants {
 
-	// TODO: Add instance variables
+	private Scanner names;
 	
 	/**
 	 * Constructor: NameSurferDataBase(filename)
@@ -26,7 +26,7 @@ public class NameSurferDataBase implements NameSurferConstants {
 	 */
 	public NameSurferDataBase(String filename) {
 		try {
-			Scanner names = new Scanner(new File("names-data.txt"));
+			names = new Scanner(new File("names-data.txt"));
 			
 		} 
 		catch (IOException e) {
