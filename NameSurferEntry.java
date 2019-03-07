@@ -31,7 +31,9 @@ public class NameSurferEntry implements NameSurferConstants {
 		}
 		
 		int [] rank = new int [11];
-		
+		for (int i = 0; i < rank.length; i++) {
+			
+		}
 	}
 
 	/**
