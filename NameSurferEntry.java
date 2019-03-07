@@ -31,7 +31,7 @@ public class NameSurferEntry implements NameSurferConstants {
 		}
 		for(int i = 0; i < line.length(); i++) {
 			char number = line.charAt(i);
-			if (Character.isLetter(number)) {
+			if (Character.isNumber(number)) {
 				name += number;
 			}
 		}	
