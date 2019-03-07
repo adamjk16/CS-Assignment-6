@@ -70,7 +70,6 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 		drawYAxis();
 		drawXAxis();
 		addLabels();
-		plotName();
 	}
 	
 	private void drawYAxis() {
@@ -98,9 +97,5 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 		}
 	}
 	
-	private void plotName() {
-		for (int i = 0; i < NDECADES; i++) {
-			int rank = 
-		}
-	}
+	
 }	
