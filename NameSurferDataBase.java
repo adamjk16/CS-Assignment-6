@@ -30,11 +30,11 @@ public class NameSurferDataBase implements NameSurferConstants {
 			names = new Scanner(new File("names-data.txt"));
 			while (names.hasNextLine()) {
 				String line = names.nextLine();
-				
+				nameHashMap.put
 			}
-		} 
-		catch (IOException e) {
-			throw new
+		names.close();	
+		} catch (IOException e) {
+			throw new ErrorException(e);
 		}
 	}
 
