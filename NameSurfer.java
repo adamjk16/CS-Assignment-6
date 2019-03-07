@@ -20,6 +20,7 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 	 */
 	
 	private JTextField inputName;
+	private GLabel decadeLabel;
 	
 	public void init() {
 		JLabel nameLabel = new JLabel("Name: ");
@@ -87,12 +88,11 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 	private void addLabels() {
 		for (int i = 0; i < NDECADES; i++) {
 			if (i < NDECADES - 1) {
-				GLabel decadeLabel = new GLabel("19" + i + "0");
-				add(decadeLabel, (getWidth()/NDECADES) * i, getHeight() - DECADE_LABEL_MARGIN_SIZE);
+				decadeLabel = new GLabel("19" + i + "0");
 			} else if (i == NDECADES - 1) {
-				GLabel decadeLabel = new GLabel ("2000");
-				add(decadeLabel, (getWidth()/NDECADES) * i, getHeight() - DECADE_LABEL_MARGIN_SIZE);
+				decadeLabel = new GLabel ("2000");
 			}
+			add(decadeLabel, (getWidth()/NDECADES) * i, getHeight() - DECADE_LABEL_MARGIN_SIZE);
 		}
 	}
 }	
