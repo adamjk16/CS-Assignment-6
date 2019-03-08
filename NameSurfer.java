@@ -105,7 +105,7 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 			int yPointOne = (getWidth() / NDECADES) * i;
 			int xPointTwo = 0;
 			int yPointTwo = (getWidth() / NDECADES) * (i + 1);
-			
+			GLine plotLine = new GLine (xPointOne, yPointOne, xPointTwo, yPointTwo);
 		}
 	}
 	
