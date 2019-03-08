@@ -48,6 +48,7 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 	public void actionPerformed(ActionEvent e) {
 		if (e.getActionCommand().equals("Graph")) {
 			name = inputName.getText();
+			plotData();
 			println("Graph: " + name);
 		} else if (e.getActionCommand().equals("Clear")) {
 			graph.clear();
@@ -73,7 +74,6 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 		drawYAxis();
 		drawXAxis();
 		addLabels();
-		plotData();
 	}
 	
 	private void drawYAxis() {
@@ -101,11 +101,10 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 		}
 	}
 	
-	private ArrayList <NameSurferEntry>
 	
-	private void plotData(NameSurferEntry name) {
+	private void plotData(String name) {
 		for (int i = 0; i < NDECADES - 1; i++) {
-			int a = rank.getRank(i);
+			int a = name.getRank(i);
 			int b = name.getRank(i + 1);
 			int xPointOne = (getWidth() / NDECADES) * i;
 			int yPointOne;
