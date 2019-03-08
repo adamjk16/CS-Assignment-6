@@ -70,8 +70,7 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 		drawYAxis();
 		drawXAxis();
 		addLabels();
-		
-		plotData();
+		plotData(name);
 	}
 	
 	private void drawYAxis() {
