@@ -21,7 +21,7 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 	
 	private JTextField inputName;
 	private GLabel decadeLabel;
-	private String name; 
+	 
 	
 	public void init() {
 		JLabel nameLabel = new JLabel("Name: ");
@@ -45,7 +45,7 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 	 */
 	public void actionPerformed(ActionEvent e) {
 		if (e.getActionCommand().equals("Graph")) {
-			name = inputName.getText();
+			String name = inputName.getText();
 			println("Graph: " + name);
 		} else if (e.getActionCommand().equals("Clear")) {
 			println("Clear");
