@@ -98,13 +98,14 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 	}
 	
 	private void plotData(NameSurferEntry name) {
-		for (int i = 0; i < getWidth(); i * (getWidth()/NDECADES)) {
+		for (int i = 0; i < NDECADES; i++) {
 			int a = name.getRank(i);
 			int b = name.getRank(i + 1);
 			int xPointOne = 0;
-			int yPointOne = 
+			int yPointOne = (getWidth() / NDECADES) * i;
 			int xPointTwo = 0;
-			itn yPointTwo = (getWidth() / NDECADES) * i;
+			int yPointTwo = (getWidth() / NDECADES) * (i + 1);
+			
 		}
 	}
 	
