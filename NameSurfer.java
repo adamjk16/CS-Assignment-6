@@ -48,7 +48,7 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 			name = inputName.getText();
 			println("Graph: " + name);
 		} else if (e.getActionCommand().equals("Clear")) {
-			graph.clear;
+			
 		}
 		
 	}
@@ -71,7 +71,7 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 		drawYAxis();
 		drawXAxis();
 		addLabels();
-		plotData(Class name);
+		plotData();
 	}
 	
 	private void drawYAxis() {
