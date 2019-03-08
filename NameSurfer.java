@@ -116,6 +116,7 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 				yPointTwo = getHeight() - GRAPH_MARGIN_SIZE - MAX_RANK / b;
 			}
 			GLine plotLine = new GLine (xPointOne, yPointOne, xPointTwo, yPointTwo);
+			add (plotLine);
 		}
 	}
 	
