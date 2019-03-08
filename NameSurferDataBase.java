@@ -25,6 +25,7 @@ public class NameSurferDataBase implements NameSurferConstants {
 	 * exception if the requested file does not exist or if an error
 	 * occurs as the file is being read.
 	 */
+	
 	public NameSurferDataBase(String filename) {
 		try {
 			names = new Scanner(new File("names-data.txt"));
