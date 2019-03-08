@@ -21,7 +21,7 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 	
 	private JTextField inputName;
 	private GLabel decadeLabel;
-	 
+	private String name;
 	
 	public void init() {
 		JLabel nameLabel = new JLabel("Name: ");
@@ -45,7 +45,7 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 	 */
 	public void actionPerformed(ActionEvent e) {
 		if (e.getActionCommand().equals("Graph")) {
-			String name = inputName.getText();
+			name = inputName.getText();
 			println("Graph: " + name);
 		} else if (e.getActionCommand().equals("Clear")) {
 			println("Clear");
@@ -71,7 +71,7 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 		drawYAxis();
 		drawXAxis();
 		addLabels();
-		plotData();
+		plotData(Class name);
 	}
 	
 	private void drawYAxis() {
@@ -99,7 +99,7 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 		}
 	}
 	
-	private void plotData(ArrayList <NameSurferEntry> name) {
+	private void plotData(NameSurferEntry name) {
 		for (int i = 0; i < NDECADES - 1; i++) {
 			int a = name.getRank(i);
 			int b = name.getRank(i + 1);
