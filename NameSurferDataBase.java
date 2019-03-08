@@ -16,7 +16,7 @@ import java.io.*;
 public class NameSurferDataBase implements NameSurferConstants {
 
 	private Scanner names;
-	private HashMap <String, > nameHashMap;
+	private HashMap <String, NameSurferEntry> nameHashMap;
 	
 	/**
 	 * Constructor: NameSurferDataBase(filename)
@@ -30,8 +30,10 @@ public class NameSurferDataBase implements NameSurferConstants {
 		try {
 			names = new Scanner(new File("names-data.txt"));
 			while (names.hasNextLine()) {
-				String line = names.nextLine();
-				nameHashMap.put
+				String data = names.nextLine();
+				nameHashMap = new HashMap <String, NameSurferEntry>();
+				NameSurferEntry name = new NameSurferEntry(data);
+				nameHashMap.put(name.getName(), name);
 			}
 		names.close();	
 		} catch (IOException e) {
