@@ -47,8 +47,10 @@ public class NameSurferDataBase implements NameSurferConstants {
 	 * method returns null.
 	 */
 	public NameSurferEntry findEntry(String name) {
-		// You need to turn this stub into a real implementation //
-		return null;
+		char letter = name.charAt(0);
+		for (int i = 0; i < name.length(); i++) {
+			if 
+		}
 	}
 }
 
