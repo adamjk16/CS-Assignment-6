@@ -17,7 +17,7 @@ public class NameSurferDataBase implements NameSurferConstants {
 
 	private Scanner names;
 	private HashMap <String, NameSurferEntry> nameHashMap;
-	
+
 	/**
 	 * Constructor: NameSurferDataBase(filename)
 	 * Creates a new NameSurferDataBase and initializes it using the
@@ -25,18 +25,17 @@ public class NameSurferDataBase implements NameSurferConstants {
 	 * exception if the requested file does not exist or if an error
 	 * occurs as the file is being read.
 	 */
-	
+
 	public NameSurferDataBase(String filename) {
 		try {
 			names = new Scanner(new File("names-data.txt"));
+			nameHashMap = new HashMap <String, NameSurferEntry>();
 			while (names.hasNextLine()) {
 				String data = names.nextLine();
-			
-				nameHashMap = new HashMap <String, NameSurferEntry>();
 				NameSurferEntry name = new NameSurferEntry(data);
 				nameHashMap.put(name.getName(), name);
 			}
-		names.close();	
+			names.close();	
 		} catch (IOException e) {
 			throw new ErrorException(e);
 		}
