@@ -101,8 +101,10 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 		for (int i = 0; i < getWidth(); i * (getWidth()/NDECADES)) {
 			int a = name.getRank(i);
 			int b = name.getRank(i + 1);
-			int xPointOne = 
+			int xPointOne = 0;
 			int yPointOne = 
+			int xPointTwo = 0;
+			itn yPointTwo = (getWidth() / NDECADES) * i;
 		}
 	}
 	
