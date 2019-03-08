@@ -34,6 +34,8 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 		JButton clearButton = new JButton("Clear");
 		add(clearButton, NORTH);
 		addActionListeners();
+		NameSurfer graph = new NameSurfer();
+		add(graph);
 		
 		
 	}
@@ -48,7 +50,7 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 			name = inputName.getText();
 			println("Graph: " + name);
 		} else if (e.getActionCommand().equals("Clear")) {
-			
+			graph.clear();
 		}
 		
 	}
