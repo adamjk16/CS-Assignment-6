@@ -48,7 +48,7 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 	public void actionPerformed(ActionEvent e) {
 		if (e.getActionCommand().equals("Graph")) {
 			name = inputName.getText();
-			plotData();
+			plotData(name);
 			println("Graph: " + name);
 		} else if (e.getActionCommand().equals("Clear")) {
 			
