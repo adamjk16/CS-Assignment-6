@@ -47,16 +47,18 @@ public class NameSurferDataBase implements NameSurferConstants {
 	 * method returns null.
 	 */
 	public NameSurferEntry findEntry(String name) {
-		char letter = name.charAt(0);
-		if (Character.isLowerCase(letter)) {
-			letter = Character.toUpperCase(letter);
+		char firstLetter = name.charAt(0);
+		if (Character.isLowerCase(firstLetter)) {
+			firstLetter = Character.toUpperCase(firstLetter);
 		}
-		String letters = name.substring(0);
+		String nextLetters = name.substring(1);
 		for (int i = 1; i < name.length(); i++) {
-			letters = letters.toLowerCase();
+			nextLetters = nextLetters.toLowerCase();
 		}
 		if (nameHashMap.containsKey(name)) {
 			return nameHashMap.get(name);
+		} else {
+			return null;
 		}
 	}
 }
