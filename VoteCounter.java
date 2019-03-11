@@ -28,9 +28,8 @@ public class VoteCounter extends ConsoleProgram {
 	 */
 	
 	private void printVoteCounts(ArrayList<String> votes) {
-		HashMap<votes, > counter = new HashMap<>();
-		for (int i = 0; i < votes.size(); i++) {
-			
+		int value = 0;
+		for ( )
 		}
 	}
 }
