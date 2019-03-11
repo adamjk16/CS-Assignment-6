@@ -139,9 +139,7 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 			}
 			add (plotLine);
 			add (nameLabel);
-			if (i == NDECADES) {
-				add(nameLabel, (getWidth()/NDECADES) * 10, ((b * (getHeight() - (GRAPH_MARGIN_SIZE * 2)) / MAX_RANK) + GRAPH_MARGIN_SIZE));
-			}
+			
 		}
 	}
 	
