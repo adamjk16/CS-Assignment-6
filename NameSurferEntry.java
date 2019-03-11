@@ -54,7 +54,7 @@ public class NameSurferEntry implements NameSurferConstants {
 		if (decade >= NDECADES) {
 			return -1;
 		}
-		return rank[NDECADES];
+		return rank[decade];
 	}
 
 	/**
