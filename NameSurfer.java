@@ -50,6 +50,7 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 		if (e.getActionCommand().equals("Graph")) {
 			name = inputName.getText();
 			NameSurferEntry entry = database.findEntry(name);
+			for (int j = 0; j < )
 			plotGraph(entry);
 		} else if (e.getActionCommand().equals("Clear")) {
 			
@@ -104,8 +105,7 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 	
 	private GLabel nameLabel;
 	
-	private void plotGraph (NameSurferEntry entry) {
-	for (int j = 0; j < NDECADES; j++) {
+	private void plotGraph (NameSurferEntry entry, j) {
 		for (int i = 0; i < NDECADES; i++) {
 			int a = entry.getRank(i);
 			int b = entry.getRank(i + 1);
@@ -144,7 +144,7 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 	}
 	
 	
-	}
+
 }
 	
 	
