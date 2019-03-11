@@ -48,9 +48,9 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 	 */
 	public void actionPerformed(ActionEvent e) {
 		if (e.getActionCommand().equals("Graph")) {
-			name = inputName.getText();
-			NameSurferEntry entry = database.findEntry(name);
-			plotGraph(entry);
+			name = inputName.getText();							//gets name input by user into text field
+			NameSurferEntry entry = database.findEntry(name);	//finds user input name in the database
+			plotGraph(entry);									
 		} else if (e.getActionCommand().equals("Clear")) {
 			redraw();
 		}
