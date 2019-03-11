@@ -36,8 +36,6 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 		addActionListeners();
 		NameSurfer graph = new NameSurfer();
 		add(graph);
-		
-		
 	}
 
 	/**
@@ -123,6 +121,6 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 			add (plotLine);
 		}
 	}
-	
+}	
 	
 	
