@@ -39,6 +39,7 @@ public class NameSurferEntry implements NameSurferConstants {
 	 */
 	
 	public String getName() {
+		if (decade )
 		return name;
 	}
 
