@@ -48,6 +48,7 @@ public class NameSurferDataBase implements NameSurferConstants {
 	 * method returns null.
 	 */
 	public NameSurferEntry findEntry(String name) {
+		
 		if (nameHashMap.containsKey(name)) {
 			return nameHashMap.get(name);
 		} else {
