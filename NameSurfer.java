@@ -122,6 +122,13 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 			GLine plotLine = new GLine (xPointOne, yPointOne, xPointTwo, yPointTwo);
 			add (plotLine);
 		}
+		addLabels();
+	}
+	
+	private void addLabels() {
+		for (int i = 0; i < NDECADES; i++) {
+			
+		}
 	}
 }	
 	
