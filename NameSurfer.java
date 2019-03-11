@@ -102,26 +102,25 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 	}
 	
 	private void plotGraph (NameSurferEntry entry) {
-		for (int i = 0; i < NDECADES - 1; i++) {
+		for (int i = 0; i < NDECADES; i++) {
 			int a = entry.getRank(i);
 			int b = entry.getRank(i + 1);
 			int xPointOne = (getWidth() / NDECADES) * i;
-			int yPointOne = 0;
+			int yPointOne;
 			int xPointTwo = (getWidth() / NDECADES) * (i + 1);
-			int yPointTwo = 0;
+			int yPointTwo;
 			if (a == 0) {
 				yPointOne = getHeight() - GRAPH_MARGIN_SIZE;
 			} else {
-				yPointOne = getHeight() - GRAPH_MARGIN_SIZE - (a / MAX_RANK);
-			} 
+				yPointOne = getHeight() - (GRAPH_MARGIN_SIZE *  2) - MAX_RANK / a;
+			}
 			if (b == 0) {
 				yPointTwo = getHeight() - GRAPH_MARGIN_SIZE;
 			} else {
-				yPointTwo = getHeight() - GRAPH_MARGIN_SIZE - (b / MAX_RANK);
+				yPointTwo = getHeight() - (GRAPH_MARGIN_SIZE * 2) - MAX_RANK / b;
 			}
 			GLine plotLine = new GLine (xPointOne, yPointOne, xPointTwo, yPointTwo);
 			add (plotLine);
-			
 		}
 	}
 }	
