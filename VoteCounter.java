@@ -28,8 +28,6 @@ public class VoteCounter extends ConsoleProgram {
 	 */
 	
 	private void printVoteCounts(ArrayList<String> votes) {
-		int value = 0;
-		for ( )
-		}
+		
 	}
 }
