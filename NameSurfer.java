@@ -51,7 +51,7 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 			name = inputName.getText();
 			NameSurferEntry entry = database.findEntry(name);
 			for (int j = 0; j < 100; j++) {
-				plotGraph(entry, j);
+				plotGraph(entry);
 			}	
 		} else if (e.getActionCommand().equals("Clear")) {
 			
@@ -106,7 +106,7 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 	
 	private GLabel nameLabel;
 	
-	private void plotGraph (NameSurferEntry entry, j) {
+	private void plotGraph (NameSurferEntry entry) {
 		for (int i = 0; i < NDECADES; i++) {
 			int a = entry.getRank(i);
 			int b = entry.getRank(i + 1);
@@ -129,20 +129,27 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 				
 			}
 			GLine plotLine = new GLine (xPointOne, yPointOne, xPointTwo, yPointTwo);
-			if (j % 4 == 1) {
-				plotLine.setColor(Color.BLACK);
-			} else if (j % 4 == 2) {
-				plotLine.setColor(Color.RED);
-			} else if (j % 4 == 3) {
-				plotLine.setColor(Color.BLUE);
-			} else if (j % 4 == 4) {
-				plotLine.setColor(Color.MAGENTA);
-			}
+			/*
+			 * 	if (number % 4 == 1) {
+					plotLine.color(Color.BLACK);
+					nameLabel.color(Color.BLACK);
+				} else if (number % 4 == 2) {
+					plotLine.color(Color.RED);
+					nameLabel.color(Color.BLACK);
+				} else if (number % 4 == 3) {
+					plotLine.setColor(Color.BLUE);
+					nameLabel.color(Color.BLACK);
+				} else if (color % 4 == 4) {
+					plotLine.setColor(Color.MAGENTA);
+					nameLabel.color(Color.BLACK);
+				}
+			 */
 			add (plotLine);
 			add (nameLabel);
 			
 		}
 	}
+}	
 	
 	
 
