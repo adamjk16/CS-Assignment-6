@@ -25,8 +25,12 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 	private GLabel decadeLabel;
 	private String name;
 	private NameSurferDataBase database;
+	private GLabel nameLabel;
+	private GLine plotLine;
 
-	
+	/*
+	 * initializes program -- adds buttons, opens database
+	 */
 	public void init() {
 		JLabel nameLabel = new JLabel("Name: ");
 		add(nameLabel, NORTH);
@@ -76,6 +80,9 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 		addLabels();
 	}
 	
+	/*
+	 * draws each vertical line on the graph (one for each decade)
+	 */
 	private void drawYAxis() {
 		for (int i = 0; i < NDECADES; i++) {
 			GLine line = new GLine((getWidth()/NDECADES) * i, 0, (getWidth()/NDECADES) * i, getHeight());
@@ -83,6 +90,9 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 		}
 	}
 	
+	/*
+	 * draws two horizontal lines on graph -- upper and lower bounds
+	 */
 	private void drawXAxis() {
 		GLine upperLine = new GLine(0, GRAPH_MARGIN_SIZE, getWidth(), GRAPH_MARGIN_SIZE);
 		add(upperLine);
@@ -90,6 +100,10 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 		add(lowerLine);
 	}
 	
+	/*
+	 * adds decade label to each vertical line, each of which represents
+	 * a decade
+	 */
 	private void addLabels() { 
 		for (int i = 0; i < NDECADES; i++) {
 			if (i < NDECADES - 1) {
@@ -101,9 +115,12 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 		}
 	}
 	
-	private GLabel nameLabel;
-	private GLine plotLine;
-	
+
+	/*
+	 * Plots the user input name's ranking for each decade by plotting a line
+	 * between two points/decades for the duration of the graph. This method also
+	 * adds a label of the name and ranking of the name at each decade/point.
+	 */
 	private void plotGraph (NameSurferEntry entry) {
 		for (int i = 0; i < NDECADES; i++) {
 			int a = entry.getRank(i);
@@ -127,7 +144,7 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 				
 			}
 			plotLine = new GLine (xPointOne, yPointOne, xPointTwo, yPointTwo);
-			/*
+			/* could not figure out how to fully implement colors
 			 * 	if (number % 4 == 1) {
 					plotLine.color(Color.BLACK);
 					nameLabel.color(Color.BLACK);
@@ -144,7 +161,6 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 			 */
 			add (plotLine);
 			add (nameLabel);
-			
 		}
 	}
 }	
