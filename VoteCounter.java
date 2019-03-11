@@ -28,6 +28,15 @@ public class VoteCounter extends ConsoleProgram {
 	 */
 	
 	private void printVoteCounts(ArrayList<String> votes) {
-		
+		int Zaphod = Collections.frequency(votes, "Zaphod Beeblebrox");
+		int Arthur = Collections.frequency(votes, "Arthur Dent");
+		int Trillian = Collections.frequency(votes, "Trillian McMillian");
+		int Marvin = Collections.frequency(votes, "Marvin");
+		int Zarniwoop = Collections.frequency(votes, "Mr. Zarniwoop");
+		println ("Votes for Zaphod Beeblebrox: " + Zaphod);
+		println ("Votes for Arthur Dent: " + Arthur);
+		println ("Votes for Trillian McMillian: " + Trillian);
+		println ("Votes for Marvin: " + Marvin);
+		println ("Votes for Mr. Zarniwoop: " + Zarniwoop);
 	}
 }
