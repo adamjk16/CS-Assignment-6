@@ -22,8 +22,7 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 	private JTextField inputName;
 	private GLabel decadeLabel;
 	private String name;
-	private NameSurferDataBase database = new NameSurferDataBase(NAMES_DATA_FILE);
-	private NameSurferEntry dataString;
+	private NameSurferDataBase database;
 
 	
 	public void init() {
@@ -37,6 +36,7 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 		JButton clearButton = new JButton("Clear");
 		add(clearButton, NORTH);
 		addActionListeners();
+		database = new NameSurferDataBase(NAMES_DATA_FILE);
 	}
 
 	/**
