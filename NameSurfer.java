@@ -109,12 +109,10 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 			int yPointOne = 0;
 			int xPointTwo = (getWidth() / NDECADES) * (i + 1);
 			int yPointTwo = 0;
-			if (a == 0 && b == 0) {
+			if (a == 0) {
 				yPointOne = getHeight() - GRAPH_MARGIN_SIZE;
-				yPointTwo = getHeight() - GRAPH_MARGIN_SIZE;
-			} else if (a != 0 && b != 0) {
-				yPointOne = ((getHeight() - GRAPH_MARGIN_SIZE * 2) * (a / MAX_RANK)) + GRAPH_MARGIN_SIZE;
-				yPointTwo = ((getHeight() - GRAPH_MARGIN_SIZE * 2) * (b / MAX_RANK)) + GRAPH_MARGIN_SIZE;
+			} else {
+				yPointOne = 
 			} else if (a != 0 && b == 0) {
 				yPointOne = ((getHeight() - GRAPH_MARGIN_SIZE * 2) * (a / MAX_RANK)) + GRAPH_MARGIN_SIZE;
 				yPointTwo = getHeight() - GRAPH_MARGIN_SIZE;
