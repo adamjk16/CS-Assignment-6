@@ -121,24 +121,13 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 			}
 			GLine plotLine = new GLine (xPointOne, yPointOne, xPointTwo, yPointTwo);
 			add (plotLine);
-		}
-	}
-	
-	private void addRankLabels(NameSurferEntry entry) {
-		for (int i = 0; i < NDECADES; i++) {
-			int rank = entry.getRank(i);
-			String rankString = Integer.toString(rank);
-			String name = entry.getName();
-			String label = name + rankString;
-			int x = i * (getWidth()/NDECADES);
-			int y = 0;
-			if (rank != 0 ) {
-				y = getHeight() - GRAPH_MARGIN_SIZE;
-			}
-			GLabel nameLabel = new GLabel (label, x, y);
+			
+			GLabel nameLabel = new GLabel (entry.getName() + " " + a, xPointTwo, b);
 			add(nameLabel);
 		}
 	}
+	
+	
 }	
 	
 	
