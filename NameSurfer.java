@@ -106,18 +106,21 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 			int a = entry.getRank(i);
 			int b = entry.getRank(i + 1);
 			int xPointOne = (getWidth() / NDECADES) * i;
-			int yPointOne;
+			int yPointOne = 0;
 			int xPointTwo = (getWidth() / NDECADES) * (i + 1);
-			int yPointTwo;
-			if (a == 0) {
+			int yPointTwo = 0;
+			if (a == 0 && b == 0) {
 				yPointOne = getHeight() - GRAPH_MARGIN_SIZE;
-			} else {
-				yPointOne = 
-			}
-			if (b == 0) {
 				yPointTwo = getHeight() - GRAPH_MARGIN_SIZE;
-			} else {
-				yPointTwo = getHeight() - (GRAPH_MARGIN_SIZE * 2) - MAX_RANK / b;
+			} else  if (a != 0 && b != 0) {
+				yPointOne = ((getHeight() - GRAPH_MARGIN_SIZE * 2) * (a / MAX_RANK)) + GRAPH_MARGIN_SIZE;
+				yPointTwo = ((getHeight() - GRAPH_MARGIN_SIZE * 2) * (b / MAX_RANK)) + GRAPH_MARGIN_SIZE;
+			} else if (a != 0 && b == 0) {
+				yPointOne = ((getHeight() - GRAPH_MARGIN_SIZE * 2) * (a / MAX_RANK)) + GRAPH_MARGIN_SIZE;
+				yPointTwo = getHeight() - GRAPH_MARGIN_SIZE;
+			} else if (a == 0 && b != 0){
+				yPointOne = getHeight() - GRAPH_MARGIN_SIZE;
+				yPointTwo= ((getHeight() - GRAPH_MARGIN_SIZE * 2) * (b / MAX_RANK)) + GRAPH_MARGIN_SIZE;
 			}
 			GLine plotLine = new GLine (xPointOne, yPointOne, xPointTwo, yPointTwo);
 			add (plotLine);
