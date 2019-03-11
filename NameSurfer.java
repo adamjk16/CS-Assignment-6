@@ -119,10 +119,10 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 			}
 			if (b == 0) {
 				yPointTwo = getHeight() - GRAPH_MARGIN_SIZE;
-				nameLabel = new GLabel (entry.getName() + "*", xPointOne, yPointTwo);
+				
 			} else {
 				yPointTwo = ((b * (getHeight() - (GRAPH_MARGIN_SIZE * 2)) / MAX_RANK) + GRAPH_MARGIN_SIZE);
-				nameLabel = new GLabel (entry.getName() + " " + a, xPointOne, yPointTwo);
+				
 			}
 			GLine plotLine = new GLine (xPointOne, yPointOne, xPointTwo, yPointTwo);
 			add (plotLine);
