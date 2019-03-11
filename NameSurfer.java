@@ -7,6 +7,8 @@
 
 import acm.graphics.*;
 import acm.program.*;
+
+import java.awt.Color;
 import java.awt.event.*;
 import javax.swing.*;
 import java.util.*;
@@ -141,6 +143,7 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 	}
 	
 	
-}	
+	}
+}
 	
 	
