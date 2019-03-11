@@ -56,6 +56,13 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 		} else {
 			name = inputName.getText();							//gets name input by user into text field
 			NameSurferEntry entry = database.findEntry(name);	//finds user input name in the database
+			char firstLetter = name.charAt(0);
+			if (Character.isLowerCase(firstLetter)) {
+				firstLetter = Character.toUpperCase(firstLetter);
+			}
+			String nextLetters = name.substring(1);
+			String nextLettersLowercase = nextLetters.toLowerCase();
+			name = firstLetter + nextLettersLowercase;
 			plotGraph(entry);							
 		}
 	}
