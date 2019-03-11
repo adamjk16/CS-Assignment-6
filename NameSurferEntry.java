@@ -62,6 +62,7 @@ public class NameSurferEntry implements NameSurferConstants {
 	 * Returns a string that makes it easy to see the value of a
 	 * NameSurferEntry.
 	 */
+	
 	public String toString() {
 		String dataString = "";
 		for (int i = 0; i < rank.length - 1; i++) {
