@@ -122,8 +122,13 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 			GLine plotLine = new GLine (xPointOne, yPointOne, xPointTwo, yPointTwo);
 			add (plotLine);
 			
-			GLabel nameLabel = new GLabel (entry.getName() + " " + a, xPointTwo, b);
-			add(nameLabel);
+			if (b != 0) {
+				GLabel nameLabel = new GLabel (entry.getName() + " " + a, xPointTwo, b);
+				add(nameLabel);
+			} else {
+				GLabel nameLabel = new GLabel (entry.getName() + "*", xPointTwo, b);
+				add(nameLabel);
+			}
 		}
 	}
 	
