@@ -23,12 +23,15 @@ public class VoteCounter extends ConsoleProgram {
 	}
 	
 	/*
-	 * Your job is to implement this method according to 
-	 * the problem specification. 
+	 * This method counts and displays the number of votes
+	 * each candidate got by counting the each instance of a 
+	 * given candidate in the array list. I used the following 
+	 * source for help: https://www.geeksforgeeks.org/count-occurrences-elements-list-java/
+	 * 
 	 */
 	
 	private void printVoteCounts(ArrayList<String> votes) {
-		int Zaphod = Collections.frequency(votes, "Zaphod Beeblebrox");
+		int Zaphod = Collections.frequency(votes, "Zaphod Beeblebrox");				//counts each instance of "Zaphod Beblebrox" in the array list, giving the number of instances/votes
 		int Arthur = Collections.frequency(votes, "Arthur Dent");
 		int Trillian = Collections.frequency(votes, "Trillian McMillian");
 		int Marvin = Collections.frequency(votes, "Marvin");
