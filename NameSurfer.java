@@ -22,7 +22,7 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 	private JTextField inputName;
 	private GLabel decadeLabel;
 	private String name;
-	private NameSurferDataBase database;
+	private NameSurferDataBase database = new NameSurferDataBase(NAMES_DATA_FILE);
 	
 	public void init() {
 		JLabel nameLabel = new JLabel("Name: ");
