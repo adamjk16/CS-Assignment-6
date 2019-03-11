@@ -123,24 +123,24 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 	 */
 	private void plotGraph (NameSurferEntry entry) {
 		for (int i = 0; i < NDECADES; i++) {
-			int a = entry.getRank(i);
-			int b = entry.getRank(i + 1);
+			int rankOne = entry.getRank(i);
+			int rankTwo = entry.getRank(i + 1);
 			int xPointOne = (getWidth() / NDECADES) * i;
 			int yPointOne;
 			int xPointTwo = (getWidth() / NDECADES) * (i + 1);
 			int yPointTwo;
-			if (a == 0) {
+			if (rankOne == 0) {
 				yPointOne = getHeight() - GRAPH_MARGIN_SIZE;
 				nameLabel = new GLabel (entry.getName() + "*", xPointOne, yPointOne);
 			} else {
-				yPointOne = ((a * (getHeight() - (GRAPH_MARGIN_SIZE * 2)) / MAX_RANK) + GRAPH_MARGIN_SIZE);
-				nameLabel = new GLabel (entry.getName() + " " + a, xPointOne, yPointOne);
+				yPointOne = ((rankOne * (getHeight() - (GRAPH_MARGIN_SIZE * 2)) / MAX_RANK) + GRAPH_MARGIN_SIZE);
+				nameLabel = new GLabel (entry.getName() + " " + rankOne, xPointOne, yPointOne);
 			}
-			if (b == 0) {
+			if (rankTwo == 0) {
 				yPointTwo = getHeight() - GRAPH_MARGIN_SIZE;
 				
 			} else {
-				yPointTwo = ((b * (getHeight() - (GRAPH_MARGIN_SIZE * 2)) / MAX_RANK) + GRAPH_MARGIN_SIZE);
+				yPointTwo = ((rankTwo * (getHeight() - (GRAPH_MARGIN_SIZE * 2)) / MAX_RANK) + GRAPH_MARGIN_SIZE);
 				
 			}
 			plotLine = new GLine (xPointOne, yPointOne, xPointTwo, yPointTwo);
