@@ -120,7 +120,7 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 				yPointTwo = getHeight() - GRAPH_MARGIN_SIZE;
 			} else if (a == 0 && b != 0){
 				yPointOne = getHeight() - GRAPH_MARGIN_SIZE;
-				yPointTwo= ((getHeight() - GRAPH_MARGIN_SIZE * 2) * (b / MAX_RANK)) + GRAPH_MARGIN_SIZE;
+				yPointTwo = ((getHeight() - GRAPH_MARGIN_SIZE * 2) * (b / MAX_RANK)) + GRAPH_MARGIN_SIZE;
 			}
 			GLine plotLine = new GLine (xPointOne, yPointOne, xPointTwo, yPointTwo);
 			add (plotLine);
