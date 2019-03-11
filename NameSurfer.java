@@ -112,13 +112,12 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 			if (a == 0) {
 				yPointOne = getHeight() - GRAPH_MARGIN_SIZE;
 			} else {
-				yPointOne = 
-			} else if (a != 0 && b == 0) {
-				yPointOne = ((getHeight() - GRAPH_MARGIN_SIZE * 2) * (a / MAX_RANK)) + GRAPH_MARGIN_SIZE;
+				yPointOne = getHeight() - GRAPH_MARGIN_SIZE - (a / MAX_RANK);
+			} 
+			if (b == 0) {
 				yPointTwo = getHeight() - GRAPH_MARGIN_SIZE;
-			} else if (a == 0 && b != 0){
-				yPointOne = getHeight() - GRAPH_MARGIN_SIZE;
-				yPointTwo = ((getHeight() - GRAPH_MARGIN_SIZE * 2) * (b / MAX_RANK)) + GRAPH_MARGIN_SIZE;
+			} else {
+				yPointTwo = getHeight() - GRAPH_MARGIN_SIZE - (b / MAX_RANK);
 			}
 			GLine plotLine = new GLine (xPointOne, yPointOne, xPointTwo, yPointTwo);
 			add (plotLine);
