@@ -101,7 +101,6 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 		}
 	}
 	
-	
 	public void NameSurferEntry (String line, getRank) {
 		for (int i = 0; i < NDECADES - 1; i++) {
 			int a = name.getRank(i);
