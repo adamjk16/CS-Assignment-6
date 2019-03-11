@@ -35,8 +35,6 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 		JButton clearButton = new JButton("Clear");
 		add(clearButton, NORTH);
 		addActionListeners();
-		NameSurfer graph = new NameSurfer();
-		add(graph);
 	}
 
 	/**
