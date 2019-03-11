@@ -21,7 +21,7 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 	
 	private JTextField inputName;
 	private GLabel decadeLabel;
-	private String name1;
+	private String name;
 	private NameSurferDataBase database = new NameSurferDataBase(NAMES_DATA_FILE);
 	
 	public void init() {
@@ -44,8 +44,8 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 	 */
 	public void actionPerformed(ActionEvent e) {
 		if (e.getActionCommand().equals("Graph")) {
-			name1 = inputName.getText();
-			NameSurferEntry entry = database.findEntry(name1);
+			name = inputName.getText();
+			NameSurferEntry entry = database.findEntry(name);
 			plotGraph(entry);
 			println(entry);
 		} else if (e.getActionCommand().equals("Clear")) {
