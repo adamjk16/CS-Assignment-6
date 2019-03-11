@@ -52,7 +52,8 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 			NameSurferEntry entry = database.findEntry(name);
 			plotGraph(entry);
 		} else if (e.getActionCommand().equals("Clear")) {
-			removeAll();
+			remove(plotLine);
+			remove(nameLabel);
 		}
 		
 	}
@@ -103,6 +104,7 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 	}
 	
 	private GLabel nameLabel;
+	private GLine plotLine;
 	
 	private void plotGraph (NameSurferEntry entry) {
 		for (int i = 0; i < NDECADES; i++) {
@@ -126,7 +128,7 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 				yPointTwo = ((b * (getHeight() - (GRAPH_MARGIN_SIZE * 2)) / MAX_RANK) + GRAPH_MARGIN_SIZE);
 				
 			}
-			GLine plotLine = new GLine (xPointOne, yPointOne, xPointTwo, yPointTwo);
+			plotLine = new GLine (xPointOne, yPointOne, xPointTwo, yPointTwo);
 			/*
 			 * 	if (number % 4 == 1) {
 					plotLine.color(Color.BLACK);
