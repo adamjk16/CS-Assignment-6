@@ -52,10 +52,8 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 			NameSurferEntry entry = database.findEntry(name);
 			plotGraph(entry);
 		} else if (e.getActionCommand().equals("Clear")) {
-			remove(plotLine);
-			remove(nameLabel);
+			redraw();
 		}
-		
 	}
 	
 	/**
