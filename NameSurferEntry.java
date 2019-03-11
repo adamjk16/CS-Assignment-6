@@ -25,10 +25,10 @@ public class NameSurferEntry implements NameSurferConstants {
 	//received help in LAIR
 	public NameSurferEntry(String line) {
 		rank = new int [NDECADES];						
-		String [] array = line.split(" ");				//splits line between each
-		name = array[0];
+		String [] array = line.split(" ");				//splits line between each space, puts into array
+		name = array[0];								//name is the first element in array
 		for (int i = 1; i < array.length; i++) {
-			rank[i - 1] = Integer.parseInt(array[i]);
+			rank[i - 1] = Integer.parseInt(array[i]);	//
 		}
 	}
 
@@ -50,6 +50,9 @@ public class NameSurferEntry implements NameSurferConstants {
 	 * not appear in a decade, the rank value is 0.
 	 */
 	public int getRank(int decade) {
+		if (decade > NDECADES) {
+			return -1;
+		}
 		return rank[decade];
 	}
 
