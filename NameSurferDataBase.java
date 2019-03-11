@@ -32,8 +32,7 @@ public class NameSurferDataBase implements NameSurferConstants {
 			names = new Scanner(new File("names-data.txt"));
 			nameHashMap = new HashMap <String, NameSurferEntry>();
 			while (names.hasNextLine()) {
-				String line = names.nextLine();
-				NameSurferEntry name = new NameSurferEntry(line);
+				NameSurferEntry name = new NameSurferEntry(names.nextLine());
 				nameHashMap.put(name.getName(), name);
 			}
 			names.close();	
