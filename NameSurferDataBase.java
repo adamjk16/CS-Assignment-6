@@ -52,7 +52,7 @@ public class NameSurferDataBase implements NameSurferConstants {
 			firstLetter = Character.toUpperCase(firstLetter);
 		}
 		String nextLetters = name.substring(1);
-		for (int i = 0; i < name.length(); i++) {
+		for (int i = 1; i < name.length(); i++) {
 			nextLetters = nextLetters.toLowerCase();
 		}
 		if (nameHashMap.containsKey(name)) {
