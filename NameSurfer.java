@@ -49,6 +49,7 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 			name = inputName.getText();
 			NameSurferEntry entry = database.findEntry(name);
 			plotGraph(entry);
+			addRankLabels(entry);
 			println(entry);
 		} else if (e.getActionCommand().equals("Clear")) {
 			
@@ -122,7 +123,6 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 			GLine plotLine = new GLine (xPointOne, yPointOne, xPointTwo, yPointTwo);
 			add (plotLine);
 		}
-		addRankLabels(entry);
 	}
 	
 	private void addRankLabels(NameSurferEntry entry) {
