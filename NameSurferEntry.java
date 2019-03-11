@@ -28,7 +28,7 @@ public class NameSurferEntry implements NameSurferConstants {
 		String [] array = line.split(" ");				//splits line between each space, puts into array
 		name = array[0];								//name is the first element in array
 		for (int i = 1; i < array.length; i++) {
-			rank[i - 1] = Integer.parseInt(array[i]);	//
+			rank[i - 1] = Integer.parseInt(array[i]);	//puts each ranking into array
 		}
 	}
 
@@ -65,9 +65,9 @@ public class NameSurferEntry implements NameSurferConstants {
 	public String toString() {
 		String dataString = "";
 		for (int i = 0; i < rank.length - 1; i++) {
-			dataString = rank[i] + ",";
+			dataString = rank[i] + ",";							//puts comma between each ranking in ranking array, changes array to string
 		}
-		dataString = name + " [" + dataString + "]";
+		dataString = name + " [" + dataString + "]";			//combines name and rankings, puts both into string
 		return dataString;
 	}
 }
