@@ -103,7 +103,6 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 	
 	private void plotGraph (NameSurferEntry entry) {
 		for (int i = 0; i < NDECADES; i++) {
-			NameSurferEntry rank = database.getRank(name);
 			int a = entry.getRank(i);
 			int b = entry.getRank(i + 1);
 			int xPointOne = (getWidth() / NDECADES) * i;
