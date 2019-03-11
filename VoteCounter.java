@@ -26,7 +26,10 @@ public class VoteCounter extends ConsoleProgram {
 	 * Your job is to implement this method according to 
 	 * the problem specification. 
 	 */
+	
 	private void printVoteCounts(ArrayList<String> votes) {
-		String 
+		for (int i = 0; i < votes.size(); i++) {
+			
+		}
 	}
 }
