@@ -27,6 +27,6 @@ public class VoteCounter extends ConsoleProgram {
 	 * the problem specification. 
 	 */
 	private void printVoteCounts(ArrayList<String> votes) {
-		// TODO
+		String 
 	}
 }
