@@ -111,7 +111,7 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 			if (a == 0) {
 				yPointOne = getHeight() - GRAPH_MARGIN_SIZE;
 			} else {
-				yPointOne = ((getHeight() - GRAPH_MARGIN_SIZE * 2) * (a / MAX_RANK)) + GRAPH_MARGIN_SIZE;
+				yPointOne = (getHeight() - GRAPH_MARGIN_SIZE * 2) 
 			}
 			if (b == 0) {
 				yPointTwo = getHeight() - GRAPH_MARGIN_SIZE;
