@@ -50,7 +50,6 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 			NameSurferEntry entry = database.findEntry(name);
 			plotGraph(entry);
 			addRankLabels(entry);
-			println(entry);
 		} else if (e.getActionCommand().equals("Clear")) {
 			
 		}
