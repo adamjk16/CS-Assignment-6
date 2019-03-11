@@ -100,6 +100,8 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 		}
 	}
 	
+	private GLabel nameLabel;
+	
 	private void plotGraph (NameSurferEntry entry) {
 		for (int i = 0; i < NDECADES; i++) {
 			int a = entry.getRank(i);
@@ -110,24 +112,21 @@ public class NameSurfer extends GraphicsProgram implements NameSurferConstants {
 			int yPointTwo;
 			if (a == 0) {
 				yPointOne = getHeight() - GRAPH_MARGIN_SIZE;
+				nameLabel = new GLabel (entry.getName() + "*", xPointOne, yPointOne);
 			} else {
 				yPointOne = ((a * (getHeight() - (GRAPH_MARGIN_SIZE * 2)) / MAX_RANK) + GRAPH_MARGIN_SIZE);
+				nameLabel = new GLabel (entry.getName() + " " + a, xPointOne, yPointOne);
 			}
 			if (b == 0) {
 				yPointTwo = getHeight() - GRAPH_MARGIN_SIZE;
+				nameLabel = new GLabel (entry.getName() + "*", xPointOne, yPointTwo);
 			} else {
 				yPointTwo = ((b * (getHeight() - (GRAPH_MARGIN_SIZE * 2)) / MAX_RANK) + GRAPH_MARGIN_SIZE);
+				nameLabel = new GLabel (entry.getName() + " " + a, xPointOne, yPointTwo);
 			}
 			GLine plotLine = new GLine (xPointOne, yPointOne, xPointTwo, yPointTwo);
 			add (plotLine);
-			
-			if (b != 0) {
-				GLabel nameLabel = new GLabel (entry.getName() + " " + a, xPointOne, b);
-				add(nameLabel);
-			} else {
-				GLabel nameLabel = new GLabel (entry.getName() + "*", xPointOne, b);
-				add(nameLabel);
-			}
+			add (nameLabel);
 		}
 	}
 	
